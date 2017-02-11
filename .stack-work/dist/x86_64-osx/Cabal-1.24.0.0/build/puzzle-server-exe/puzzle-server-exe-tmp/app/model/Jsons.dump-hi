@@ -1,0 +1,587 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-09 07:32:59.437828 UTC
+
+interface main@main:Jsons 8001
+  interface hash: 826f29491e2af21ae0a0fccd08f64071
+  ABI hash: 9956696f02804987786d6e8369cabb30
+  export-list hash: 63bb92201dd577eeb63d28ab893615a5
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f29aa23fe3fed3b3c4ea77062f6b48bd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Jsons.RequestNumPla{Jsons.RequestNumPla reqBoard reqId}
+  Jsons.ResponseNumPla{Jsons.ResponseNumPla resBoard resId}
+module dependencies:
+package dependencies: aeson-0.11.2.1@aeson-0.11.2.1-7upVB3k6XZaETFQEHHKnl
+                      array-0.5.1.1@array-0.5.1.1
+                      attoparsec-0.13.0.2@attoparsec-0.13.0.2-GLM6q4XQBSiI4fJOXoBxlu
+                      base-4.9.0.0 binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv
+                      ghc-boot-th-8.0.1@ghc-boot-th-8.0.1 ghc-prim-0.5.0.0
+                      hashable-1.2.4.0@hashable-1.2.4.0-EMu4H7FB10MAl6hwKw992G
+                      integer-gmp-1.0.0.1
+                      primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa
+                      scientific-0.3.4.9@scientific-0.3.4.9-6oTYuCcx6H5BsTGU7D2Gk3
+                      tagged-0.8.5@tagged-0.8.5-CtgV6EcN0do8F92i1S6iYx
+                      template-haskell-2.11.0.0
+                      text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unordered-containers-0.2.7.1@unordered-containers-0.2.7.1-Eo9jd5DMz45DhBLCG8skzW
+                      vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6
+orphans: aeson-0.11.2.1@aeson-0.11.2.1-7upVB3k6XZaETFQEHHKnl:Data.Aeson.Types.Generic
+         aeson-0.11.2.1@aeson-0.11.2.1-7upVB3k6XZaETFQEHHKnl:Data.Aeson.Types.Instances
+         attoparsec-0.13.0.2@attoparsec-0.13.0.2-GLM6q4XQBSiI4fJOXoBxlu:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.0.2@attoparsec-0.13.0.2-GLM6q4XQBSiI4fJOXoBxlu:Data.Attoparsec.Text.Internal
+         base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.4.0@hashable-1.2.4.0-EMu4H7FB10MAl6hwKw992G:Data.Hashable.Generic
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6:Data.Vector.Unboxed
+family instance modules: attoparsec-0.13.0.2@attoparsec-0.13.0.2-GLM6q4XQBSiI4fJOXoBxlu:Data.Attoparsec.Internal.Types
+                         base-4.9.0.0:Control.Applicative base-4.9.0.0:Data.Complex
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Functor.Identity base-4.9.0.0:Data.List.NonEmpty
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Semigroup
+                         base-4.9.0.0:Data.Type.Equality base-4.9.0.0:Data.Version
+                         base-4.9.0.0:Data.Void base-4.9.0.0:GHC.Exts
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.2@dlist-0.8.0.2-GWAMmbX9rLg3tqrbOizHGv:Data.DList
+                         ghc-boot-th-8.0.1@ghc-boot-th-8.0.1:GHC.LanguageExtensions.Type
+                         primitive-0.6.1.0@primitive-0.6.1.0-Ip44DqhfCp21tTUYbecwa:Control.Monad.Primitive
+                         tagged-0.8.5@tagged-0.8.5-CtgV6EcN0do8F92i1S6iYx:Data.Tagged
+                         template-haskell-2.11.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text
+                         text-1.2.2.1@text-1.2.2.1-5QpmrLQApEZ4Ly9nMHWY0s:Data.Text.Lazy
+                         unordered-containers-0.2.7.1@unordered-containers-0.2.7.1-Eo9jd5DMz45DhBLCG8skzW:Data.HashMap.Base
+                         unordered-containers-0.2.7.1@unordered-containers-0.2.7.1-Eo9jd5DMz45DhBLCG8skzW:Data.HashSet
+                         vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6:Data.Vector
+                         vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6:Data.Vector.Primitive
+                         vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6:Data.Vector.Storable
+                         vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6:Data.Vector.Unboxed
+                         vector-0.11.0.0@vector-0.11.0.0-BEDZb5o2QOhGbIm6ky7rl6:Data.Vector.Unboxed.Base
+import  -/  aeson-0.11.2.1@aeson-0.11.2.1-7upVB3k6XZaETFQEHHKnl:Data.Aeson 781ef1374a011db45a9223627124412d
+import  -/  aeson-0.11.2.1@aeson-0.11.2.1-7upVB3k6XZaETFQEHHKnl:Data.Aeson.Types.Class 28d9addb1937c6a5858f314411f8fe73
+import  -/  aeson-0.11.2.1@aeson-0.11.2.1-7upVB3k6XZaETFQEHHKnl:Data.Aeson.Types.Instances c359307914b230096f9f40a2ee204013
+import  -/  aeson-0.11.2.1@aeson-0.11.2.1-7upVB3k6XZaETFQEHHKnl:Data.Aeson.Types.Internal 06f65c172d574ed89d1f8dbf98510476
+import  -/  base-4.9.0.0:Control.Applicative 7728b33d6969dce59e89474349eb1397
+import  -/  base-4.9.0.0:Data.Functor 6fc476505db88d678632a4a838125f13
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  base-4.9.0.0:Text.Printf 981db3fab2db52a63576c71c790058bf
+import  -/  base-4.9.0.0:Text.Read 9c1be14f7e5eac8b18bcb566c5763677
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+af8f81587e142645ac0514a1b0038420
+  $fFromJSONRequestNumPla ::
+    Data.Aeson.Types.Class.FromJSON Jsons.RequestNumPla
+  DFunId
+  {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Jsons.$fFromJSONRequestNumPla_$cparseJSON
+                  `cast`
+                (Sym (Data.Aeson.Types.Class.N:FromJSON[0]
+                          <Jsons.RequestNumPla>_N)) -}
+af8f81587e142645ac0514a1b0038420
+  $fFromJSONRequestNumPla_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser Jsons.RequestNumPla
+  {- Arity: 1, Strictness: <S,1*U> -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fFromJSONResponseNumPla ::
+    Data.Aeson.Types.Class.FromJSON Jsons.ResponseNumPla
+  DFunId
+  {- Arity: 1, Strictness: <S,1*U>, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Jsons.$fFromJSONResponseNumPla_$cparseJSON
+                  `cast`
+                (Sym (Data.Aeson.Types.Class.N:FromJSON[0]
+                          <Jsons.ResponseNumPla>_N)) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fFromJSONResponseNumPla_$cparseJSON ::
+    Data.Aeson.Types.Internal.Value
+    -> Data.Aeson.Types.Internal.Parser Jsons.ResponseNumPla
+  {- Arity: 1, Strictness: <S,1*U> -}
+af8f81587e142645ac0514a1b0038420
+  $fShowRequestNumPla :: GHC.Show.Show Jsons.RequestNumPla
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Jsons.RequestNumPla
+                  Jsons.$fShowRequestNumPla_$cshowsPrec
+                  Jsons.$fShowRequestNumPla_$cshow
+                  Jsons.$fShowRequestNumPla_$cshowList -}
+af8f81587e142645ac0514a1b0038420
+  $fShowRequestNumPla1 :: Jsons.RequestNumPla -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Jsons.RequestNumPla) (w1 :: GHC.Base.String) ->
+                 case w of ww { Jsons.RequestNumPla ww1 ww2 ->
+                 Jsons.$w$cshowsPrec 0# ww1 ww2 w1 }) -}
+af8f81587e142645ac0514a1b0038420
+  $fShowRequestNumPla_$cshow ::
+    Jsons.RequestNumPla -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Jsons.RequestNumPla) ->
+                 Jsons.$fShowRequestNumPla_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+af8f81587e142645ac0514a1b0038420
+  $fShowRequestNumPla_$cshowList ::
+    [Jsons.RequestNumPla] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Jsons.RequestNumPla
+                   Jsons.$fShowRequestNumPla1) -}
+af8f81587e142645ac0514a1b0038420
+  $fShowRequestNumPla_$cshowsPrec ::
+    GHC.Types.Int -> Jsons.RequestNumPla -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Jsons.RequestNumPla)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Jsons.RequestNumPla ww3 ww4 ->
+                 Jsons.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fShowResponseNumPla :: GHC.Show.Show Jsons.ResponseNumPla
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Jsons.ResponseNumPla
+                  Jsons.$fShowResponseNumPla_$cshowsPrec
+                  Jsons.$fShowResponseNumPla_$cshow
+                  Jsons.$fShowResponseNumPla_$cshowList -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fShowResponseNumPla1 :: Jsons.ResponseNumPla -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Jsons.ResponseNumPla)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Jsons.ResponseNumPla ww1 ww2 ->
+                 Jsons.$w$cshowsPrec1 0# ww1 ww2 w1 }) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fShowResponseNumPla_$cshow ::
+    Jsons.ResponseNumPla -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Jsons.ResponseNumPla) ->
+                 Jsons.$fShowResponseNumPla_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fShowResponseNumPla_$cshowList ::
+    [Jsons.ResponseNumPla] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Jsons.ResponseNumPla
+                   Jsons.$fShowResponseNumPla1) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fShowResponseNumPla_$cshowsPrec ::
+    GHC.Types.Int -> Jsons.ResponseNumPla -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Jsons.ResponseNumPla)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Jsons.ResponseNumPla ww3 ww4 ->
+                 Jsons.$w$cshowsPrec1 ww1 ww3 ww4 w2 } }) -}
+af8f81587e142645ac0514a1b0038420
+  $fToJSONRequestNumPla ::
+    Data.Aeson.Types.Class.ToJSON Jsons.RequestNumPla
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Jsons.RequestNumPla
+                  Jsons.$fToJSONRequestNumPla_$ctoJSON
+                  Jsons.$fToJSONRequestNumPla_$ctoEncoding -}
+b3d0c37159fc2c583e1941fba4b7d883
+  $fToJSONRequestNumPla1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "reqId"#) -}
+0afcc2586df971ca0ce8e387fd1bb5a9
+  $fToJSONRequestNumPla2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4#) -}
+6cab48ad1a75d9423ec54f1e9568aba9
+  $fToJSONRequestNumPla3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "reqBoard"#) -}
+af8f81587e142645ac0514a1b0038420
+  $fToJSONRequestNumPla_$ctoEncoding ::
+    Jsons.RequestNumPla -> Data.Aeson.Types.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: Jsons.RequestNumPla) ->
+                 Data.Aeson.Encode.Builder.encodeToBuilder
+                   (Jsons.$fToJSONRequestNumPla_$ctoJSON eta))
+                  `cast`
+                (<Jsons.RequestNumPla>_R
+                 ->_R Sym (Data.Aeson.Types.Internal.N:Encoding[0])) -}
+af8f81587e142645ac0514a1b0038420
+  $fToJSONRequestNumPla_$ctoJSON ::
+    Jsons.RequestNumPla -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>m1, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Jsons.RequestNumPla) ->
+                 case w of ww { Jsons.RequestNumPla ww1 ww2 ->
+                 case Jsons.$w$ctoJSON ww1 ww2 of ww3 { Unit# ww4 ->
+                 Data.Aeson.Types.Internal.Object ww4 } }) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fToJSONResponseNumPla ::
+    Data.Aeson.Types.Class.ToJSON Jsons.ResponseNumPla
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Jsons.ResponseNumPla
+                  Jsons.$fToJSONResponseNumPla_$ctoJSON
+                  Jsons.$fToJSONResponseNumPla_$ctoEncoding -}
+6604cbc7ae27c15695296114e871f253
+  $fToJSONResponseNumPla1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "resId"#) -}
+deddda22f7671c23787847d729f78419
+  $fToJSONResponseNumPla2 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString# "resBoard"#) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fToJSONResponseNumPla_$ctoEncoding ::
+    Jsons.ResponseNumPla -> Data.Aeson.Types.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (eta :: Jsons.ResponseNumPla) ->
+                 Data.Aeson.Encode.Builder.encodeToBuilder
+                   (Jsons.$fToJSONResponseNumPla_$ctoJSON eta))
+                  `cast`
+                (<Jsons.ResponseNumPla>_R
+                 ->_R Sym (Data.Aeson.Types.Internal.N:Encoding[0])) -}
+dfa342e3ffc9c2ae680a41c215a64733
+  $fToJSONResponseNumPla_$ctoJSON ::
+    Jsons.ResponseNumPla -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>m1, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Jsons.ResponseNumPla) ->
+                 case w of ww { Jsons.ResponseNumPla ww1 ww2 ->
+                 case Jsons.$w$ctoJSON1 ww1 ww2 of ww3 { Unit# ww4 ->
+                 Data.Aeson.Types.Internal.Object ww4 } }) -}
+10dfdf98543cd2208b38be55aa6a8426
+  $tc'RequestNumPla :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13184362945153181384##
+                   17223030651976832630##
+                   Jsons.$trModule
+                   Jsons.$tc'RequestNumPla1) -}
+de65b6e392ce8bcd3d83a963ba25cad4
+  $tc'RequestNumPla1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'RequestNumPla"#) -}
+257354901b6937db0c37c16ed1c08150
+  $tc'ResponseNumPla :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10692169038160284920##
+                   18037065360814639147##
+                   Jsons.$trModule
+                   Jsons.$tc'ResponseNumPla1) -}
+47caec3c0398781eedbf4ec427b8b96f
+  $tc'ResponseNumPla1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ResponseNumPla"#) -}
+7f2f05eda5f0178bedf4edcd7d729207
+  $tcRequestNumPla :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3457075928763835556##
+                   15994800254783705549##
+                   Jsons.$trModule
+                   Jsons.$tcRequestNumPla1) -}
+637b8cbfcb4c37b243df166ec4ce60e7
+  $tcRequestNumPla1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RequestNumPla"#) -}
+6185bad17fc467dc1e0f890654e1a66e
+  $tcResponseNumPla :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   749603389143864907##
+                   6845781007223377895##
+                   Jsons.$trModule
+                   Jsons.$tcResponseNumPla1) -}
+22184d9fb8450726c79b060fb6c40aa3
+  $tcResponseNumPla1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ResponseNumPla"#) -}
+46baf327f553f1435d041a6c6abbc118
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Jsons.$trModule2 Jsons.$trModule1) -}
+88499c67a5d004c6f86d101f152be377
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Jsons"#) -}
+d2b251c1afb1d1d941b05f37cde23ff3
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+f9e336c323b1d77d1a17eb8505782237
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> [[GHC.Types.Int]]
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U(U)><L,U>,
+     Inline: [0] -}
+bd2a2ca157313d6297c63cee5b642fd9
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> [[[GHC.Types.Int]]]
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <S,U><L,1*U><L,1*U(U)><L,U>,
+     Inline: [0] -}
+3120dcf525575b2200588e547d635ad0
+  $w$ctoJSON ::
+    [[GHC.Types.Int]]
+    -> GHC.Types.Int -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 2, Strictness: <L,1*U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: [[GHC.Types.Int]]) (ww1 :: GHC.Types.Int) ->
+                 case Data.Aeson.Types.Internal.$sfromList1
+                        @ Data.Aeson.Types.Internal.Value
+                        (GHC.Types.:
+                           @ Data.Aeson.Types.Internal.Pair
+                           (Jsons.$fToJSONRequestNumPla3,
+                            case GHC.Show.showList__
+                                   @ [GHC.Types.Int]
+                                   GHC.Show.shows_$cshowList1
+                                   ww
+                                   (GHC.Types.[] @ GHC.Types.Char) of dt { DEFAULT ->
+                            case GHC.Magic.runRW#
+                                   @ 'GHC.Types.PtrRepLifted
+                                   @ Data.Text.Internal.Text
+                                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case GHC.Prim.newByteArray#
+                                           @ GHC.Prim.RealWorld
+                                           8#
+                                           s1 of ds1 { (#,#) ipv ipv1 ->
+                                    Jsons.$wouter1
+                                      (Data.Text.Array.MArray @ GHC.Prim.RealWorld ipv1)
+                                      Jsons.$fToJSONRequestNumPla2
+                                      dt
+                                      0#
+                                      ipv }) of ds1 { (#,#) ipv ipv1 ->
+                            case ipv1 of dt1 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                            Data.Aeson.Types.Internal.String dt1 } } })
+                           (GHC.Types.:
+                              @ Data.Aeson.Types.Internal.Pair
+                              (Jsons.$fToJSONRequestNumPla1,
+                               case ww1 of ww2 { GHC.Types.I# ww3 ->
+                               case GHC.Show.$wshowSignedInt
+                                      0#
+                                      ww3
+                                      (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                               case GHC.Magic.runRW#
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ Data.Text.Internal.Text
+                                      (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                       case GHC.Prim.newByteArray#
+                                              @ GHC.Prim.RealWorld
+                                              8#
+                                              s1 of ds1 { (#,#) ipv ipv1 ->
+                                       Jsons.$wouter
+                                         (Data.Text.Array.MArray @ GHC.Prim.RealWorld ipv1)
+                                         Jsons.$fToJSONRequestNumPla2
+                                         (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                                         0#
+                                         ipv }) of ds1 { (#,#) ipv ipv1 ->
+                               case ipv1 of dt { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                               Data.Aeson.Types.Internal.String dt } } } })
+                              (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair)))
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of dt { DEFAULT ->
+                 (# dt #) }) -}
+6a8e48d6e3da6d4db7794134f73e07cd
+  $w$ctoJSON1 ::
+    [[[GHC.Types.Int]]]
+    -> GHC.Types.Int -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 2, Strictness: <L,1*U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ (ww :: [[[GHC.Types.Int]]]) (ww1 :: GHC.Types.Int) ->
+                 case Data.Aeson.Types.Internal.$sfromList1
+                        @ Data.Aeson.Types.Internal.Value
+                        (GHC.Types.:
+                           @ Data.Aeson.Types.Internal.Pair
+                           (Jsons.$fToJSONResponseNumPla2,
+                            case GHC.Show.showList__
+                                   @ [[GHC.Types.Int]]
+                                   GHC.Show.$fShow[]_$s$cshowList
+                                   ww
+                                   (GHC.Types.[] @ GHC.Types.Char) of dt { DEFAULT ->
+                            case GHC.Magic.runRW#
+                                   @ 'GHC.Types.PtrRepLifted
+                                   @ Data.Text.Internal.Text
+                                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case GHC.Prim.newByteArray#
+                                           @ GHC.Prim.RealWorld
+                                           8#
+                                           s1 of ds1 { (#,#) ipv ipv1 ->
+                                    Jsons.$wouter3
+                                      (Data.Text.Array.MArray @ GHC.Prim.RealWorld ipv1)
+                                      Jsons.$fToJSONRequestNumPla2
+                                      dt
+                                      0#
+                                      ipv }) of ds1 { (#,#) ipv ipv1 ->
+                            case ipv1 of dt1 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                            Data.Aeson.Types.Internal.String dt1 } } })
+                           (GHC.Types.:
+                              @ Data.Aeson.Types.Internal.Pair
+                              (Jsons.$fToJSONResponseNumPla1,
+                               case ww1 of ww2 { GHC.Types.I# ww3 ->
+                               case GHC.Show.$wshowSignedInt
+                                      0#
+                                      ww3
+                                      (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                               case GHC.Magic.runRW#
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ Data.Text.Internal.Text
+                                      (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                       case GHC.Prim.newByteArray#
+                                              @ GHC.Prim.RealWorld
+                                              8#
+                                              s1 of ds1 { (#,#) ipv ipv1 ->
+                                       Jsons.$wouter2
+                                         (Data.Text.Array.MArray @ GHC.Prim.RealWorld ipv1)
+                                         Jsons.$fToJSONRequestNumPla2
+                                         (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                                         0#
+                                         ipv }) of ds1 { (#,#) ipv ipv1 ->
+                               case ipv1 of dt { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                               Data.Aeson.Types.Internal.String dt } } } })
+                              (GHC.Types.[] @ Data.Aeson.Types.Internal.Pair)))
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of dt { DEFAULT ->
+                 (# dt #) }) -}
+dae304b0c8272ac89cfffcb1492843b4
+  $wouter ::
+    Data.Text.Array.MArray GHC.Prim.RealWorld
+    -> GHC.Types.Int
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+65560125ba064b1efc4dd239724abe53
+  $wouter1 ::
+    Data.Text.Array.MArray GHC.Prim.RealWorld
+    -> GHC.Types.Int
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+9966f13095026bb7390271bc73bba097
+  $wouter2 ::
+    Data.Text.Array.MArray GHC.Prim.RealWorld
+    -> GHC.Types.Int
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+6bbc75b71b5a6612f26193dcee5cf7be
+  $wouter3 ::
+    Data.Text.Array.MArray GHC.Prim.RealWorld
+    -> GHC.Types.Int
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+af8f81587e142645ac0514a1b0038420
+  data RequestNumPla
+    = RequestNumPla {reqBoard :: [[GHC.Types.Int]],
+                     reqId :: GHC.Types.Int}
+dfa342e3ffc9c2ae680a41c215a64733
+  data ResponseNumPla
+    = ResponseNumPla {resBoard :: [[[GHC.Types.Int]]],
+                      resId :: GHC.Types.Int}
+c2981359f3ecc3d66a0a62d1e21cc70f
+  reqBoard :: Jsons.RequestNumPla -> [[GHC.Types.Int]]
+  RecSel Left Jsons.RequestNumPla
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Jsons.RequestNumPla) ->
+                 case ds of wild { Jsons.RequestNumPla ds1 ds2 -> ds1 }) -}
+faa9fb431c6d333ff4f54d14a6fcb528
+  reqId :: Jsons.RequestNumPla -> GHC.Types.Int
+  RecSel Left Jsons.RequestNumPla
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Jsons.RequestNumPla) ->
+                 case ds of wild { Jsons.RequestNumPla ds1 ds2 -> ds2 }) -}
+9f19862bce344f5b48d35db9c58d66a8
+  resBoard :: Jsons.ResponseNumPla -> [[[GHC.Types.Int]]]
+  RecSel Left Jsons.ResponseNumPla
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Jsons.ResponseNumPla) ->
+                 case ds of wild { Jsons.ResponseNumPla ds1 ds2 -> ds1 }) -}
+9a6c0eba0cc0183e74e6a5f24ef6e244
+  resId :: Jsons.ResponseNumPla -> GHC.Types.Int
+  RecSel Left Jsons.ResponseNumPla
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Jsons.ResponseNumPla) ->
+                 case ds of wild { Jsons.ResponseNumPla ds1 ds2 -> ds2 }) -}
+instance Data.Aeson.Types.Class.FromJSON [Jsons.RequestNumPla]
+  = Jsons.$fFromJSONRequestNumPla
+instance Data.Aeson.Types.Class.FromJSON [Jsons.ResponseNumPla]
+  = Jsons.$fFromJSONResponseNumPla
+instance GHC.Show.Show [Jsons.RequestNumPla]
+  = Jsons.$fShowRequestNumPla
+instance GHC.Show.Show [Jsons.ResponseNumPla]
+  = Jsons.$fShowResponseNumPla
+instance Data.Aeson.Types.Class.ToJSON [Jsons.RequestNumPla]
+  = Jsons.$fToJSONRequestNumPla
+instance Data.Aeson.Types.Class.ToJSON [Jsons.ResponseNumPla]
+  = Jsons.$fToJSONResponseNumPla
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

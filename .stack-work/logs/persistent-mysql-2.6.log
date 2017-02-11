@@ -1,0 +1,53 @@
+Configuring persistent-mysql-2.6...
+Building persistent-mysql-2.6...
+Preprocessing library persistent-mysql-2.6...
+[1 of 1] Compiling Database.Persist.MySQL ( Database/Persist/MySQL.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Database/Persist/MySQL.o )
+
+Database/Persist/MySQL.hs:23:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+Database/Persist/MySQL.hs:525:5: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Database/Persist/MySQL.hs:950:7: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In a case alternative: (_, _, ([], old')) -> ...
+
+Database/Persist/MySQL.hs:961:7: warning: [-Woverlapping-patterns]
+    Pattern match is redundant
+    In a case alternative: (_, _, (errs, _)) -> ...
+
+Database/Persist/MySQL.hs:975:20: warning: [-Wmissing-fields]
+    • Fields of ‘SqlBackend’ not initialised: connUpsertSql
+    • In the expression:
+        SqlBackend
+          {connPrepare = \ _ -> do { return (...) },
+           connInsertManySql = Nothing, connInsertSql = undefined,
+           connStmtMap = smap, connClose = undefined,
+           connMigrateSql = mockMigrate undefined, connBegin = undefined,
+           connCommit = undefined, connRollback = undefined,
+           connEscapeName = undefined, connNoLimit = undefined,
+           connRDBMS = undefined, connLimitOffset = undefined,
+           connLogFunc = undefined}
+      In an equation for ‘sqlbackend’:
+          sqlbackend
+            = SqlBackend
+                {connPrepare = \ _ -> do { ... }, connInsertManySql = Nothing,
+                 connInsertSql = undefined, connStmtMap = smap,
+                 connClose = undefined, connMigrateSql = mockMigrate undefined,
+                 connBegin = undefined, connCommit = undefined,
+                 connRollback = undefined, connEscapeName = undefined,
+                 connNoLimit = undefined, connRDBMS = undefined,
+                 connLimitOffset = undefined, connLogFunc = undefined}
+      In the expression:
+        do { smap <- newIORef $ Map.empty;
+             let sqlbackend = ...
+                 result = runReaderT . runWriterT . runWriterT $ mig;
+             resp <- result sqlbackend;
+             mapM_ T.putStrLn $ map snd $ snd resp }
+Installing library in
+/Users/hiromu/SourceCode/Haskell/stacks/puzzle-server/.stack-work/install/x86_64-osx/lts-7.0/8.0.1/lib/x86_64-osx-ghc-8.0.1/persistent-mysql-2.6-D4rn3O1h40BIaXYsqp0jgs
+Registering persistent-mysql-2.6...

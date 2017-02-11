@@ -1,0 +1,1138 @@
+
+==================== FINAL INTERFACE ====================
+2017-01-18 05:02:09.251242 UTC
+
+interface main@main:NumberPlace 8001
+  interface hash: 47b804d3a2007e94fe7e858b6e9a823b
+  ABI hash: 69c4e55a6d03edf87a3e98b4ed40f336
+  export-list hash: 54d1d91594347cf8e8ab468668fc7a64
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3dba0b9c63727b66895a6842d454ce30
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  NumberPlace.failedBoard
+  NumberPlace.solveMyBoard
+  NumberPlace.solver
+  NumberPlace.solver'
+  NumberPlace.Board
+module dependencies:
+package dependencies: base-4.9.0.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.0.0:GHC.Base base-4.9.0.0:GHC.Float
+family instance modules: base-4.9.0.0:Control.Applicative
+                         base-4.9.0.0:Data.Either base-4.9.0.0:Data.Functor.Const
+                         base-4.9.0.0:Data.Monoid base-4.9.0.0:Data.Type.Equality
+                         base-4.9.0.0:GHC.Generics base-4.9.0.0:GHC.IO.Exception
+                         base-4.9.0.0:GHC.TypeLits
+import  -/  base-4.9.0.0:Data.Bits 0645fbfabc0cdbcabea9f4570dc3c021
+import  -/  base-4.9.0.0:Data.Foldable 8aeb682f6c74f97fcf0ace0d608a43ea
+import  -/  base-4.9.0.0:Data.List 49b86831b79b49ce5d4d9416ecba61df
+import  -/  base-4.9.0.0:GHC.Base 8ed3be81c0707b322f975a84ae1bb816
+import  -/  base-4.9.0.0:GHC.List 13d2451194c1c6e53b4f4f07947736dd
+import  -/  base-4.9.0.0:GHC.Num 48f506a8f4ecf06285d0a0706594dcc0
+import  -/  base-4.9.0.0:GHC.Real 08bf4acb5f2508f89d6fbcd57fe232e9
+import  -/  base-4.9.0.0:GHC.Show 952347a6ab730bcb25c0854d8bc6ca51
+import  -/  base-4.9.0.0:Prelude b9bddb97799837fe67a8d00939a5b6c3
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+81253d7c988b0aabe61c22bacef79b80
+  $fShowFlag :: GHC.Show.Show NumberPlace.Flag
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ NumberPlace.Flag
+                  NumberPlace.$fShowFlag_$cshowsPrec
+                  NumberPlace.$fShowFlag_$cshow
+                  NumberPlace.$fShowFlag_$cshowList -}
+81253d7c988b0aabe61c22bacef79b80
+  $fShowFlag1 :: NumberPlace.Flag -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: NumberPlace.Flag) (w1 :: GHC.Base.String) ->
+                 case w of ww { NumberPlace.Flag ww1 ww2 ww3 ->
+                 NumberPlace.$w$cshowsPrec 0# ww1 ww2 ww3 w1 }) -}
+5988086eb959ac19a90a746974839130
+  $fShowFlag2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Flag "#) -}
+81253d7c988b0aabe61c22bacef79b80
+  $fShowFlag_$cshow :: NumberPlace.Flag -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x1 :: NumberPlace.Flag) ->
+                 NumberPlace.$fShowFlag_$cshowsPrec
+                   GHC.Show.shows22
+                   x1
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+81253d7c988b0aabe61c22bacef79b80
+  $fShowFlag_$cshowList :: [NumberPlace.Flag] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ NumberPlace.Flag
+                   NumberPlace.$fShowFlag1) -}
+81253d7c988b0aabe61c22bacef79b80
+  $fShowFlag_$cshowsPrec ::
+    GHC.Types.Int -> NumberPlace.Flag -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: NumberPlace.Flag)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { NumberPlace.Flag ww3 ww4 ww5 ->
+                 NumberPlace.$w$cshowsPrec ww1 ww3 ww4 ww5 w2 } }) -}
+07dda66c9bd0d65819c268876aaa21ab
+  $tc'Flag :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3059704651038689540##
+                   7199855004839912688##
+                   NumberPlace.$trModule
+                   NumberPlace.$tc'Flag1) -}
+5e0e505b617cf0303f2c27f46b8fbfb8
+  $tc'Flag1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Flag"#) -}
+fe2bcb8ecae27993b2601ba5c09a620a
+  $tcFlag :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1717804746823843806##
+                   16564491956481915784##
+                   NumberPlace.$trModule
+                   NumberPlace.$tcFlag1) -}
+d5ada714cc51b66d5ab0fe3d8b2fadad
+  $tcFlag1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Flag"#) -}
+ed2b0ed51abf561db7fdccee480524fd
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   NumberPlace.$trModule2
+                   NumberPlace.$trModule1) -}
+a9661b8e300f8110c6f6c99b437270df
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "NumberPlace"#) -}
+e93a2255baf5d277b1c1f9b2457ae76b
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+cc085bb10a286be787bf17059445ac76
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5, Strictness: <S,U><L,1*U><L,1*U><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: [GHC.Types.Int])
+                   (ww2 :: [GHC.Types.Int])
+                   (ww3 :: [GHC.Types.Int])
+                   (w :: GHC.Base.String) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x1 :: GHC.Base.String)[OneShot] ->
+                     GHC.Show.showList__
+                       @ GHC.Types.Int
+                       GHC.Show.shows_$sshows11
+                       ww1
+                       (GHC.Types.:
+                          @ GHC.Types.Char
+                          GHC.Show.showSpace1
+                          (GHC.Show.showList__
+                             @ GHC.Types.Int
+                             GHC.Show.shows_$sshows11
+                             ww2
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.showSpace1
+                                (GHC.Show.shows_$cshowList1 ww3 x1))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++ @ GHC.Types.Char NumberPlace.$fShowFlag2 (g w)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           NumberPlace.$fShowFlag2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows6 w))) }) -}
+8cf27d31fa37f6387491f4f23636d069
+  $wdecideNum ::
+    NumberPlace.Board
+    -> NumberPlace.Flag
+    -> (# NumberPlace.Board, NumberPlace.Flag, GHC.Types.Bool #)
+  {- Arity: 2, Strictness: <L,U><L,U(U,U,U)>, Inline: [0] -}
+4a86a1eccb4915bd8f3e5952dc5d0cc8
+  $winitFlag ::
+    NumberPlace.Board
+    -> (# [GHC.Types.Int], [GHC.Types.Int], [GHC.Types.Int] #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ (w :: NumberPlace.Board) ->
+                 letrec {
+                   $wgo1 :: [(GHC.Types.Int, GHC.Types.Int)]
+                            -> [GHC.Types.Int]
+                            -> [GHC.Types.Int]
+                            -> [GHC.Types.Int]
+                            -> (# [GHC.Types.Int], [GHC.Types.Int], [GHC.Types.Int] #)
+                     {- Arity: 4, Strictness: <S,1*U><L,U><L,U><L,U>, Inline: [0] -}
+                   = \ (w1 :: [(GHC.Types.Int, GHC.Types.Int)])
+                       (ww :: [GHC.Types.Int])
+                       (ww1 :: [GHC.Types.Int])
+                       (ww2 :: [GHC.Types.Int]) ->
+                     case w1 of wild {
+                       [] -> (# ww, ww1, ww2 #)
+                       : y ys
+                       -> case y of wild1 { (,) x1 y1 ->
+                          case x1 of ww3 { GHC.Types.I# ww4 ->
+                          case GHC.List.$w!!
+                                 @ GHC.Types.Int
+                                 (GHC.List.!! @ [GHC.Types.Int] w y1)
+                                 ww4 of wild2 { GHC.Types.I# x2 ->
+                          case x2 of wild3 {
+                            DEFAULT
+                            -> case NumberPlace.$winvFlag
+                                      ww
+                                      ww1
+                                      ww2
+                                      ww3
+                                      y1
+                                      wild2 of ww5 { (#,,#) ww6 ww7 ww8 ->
+                               $wgo1 ys ww6 ww7 ww8 }
+                            0# -> $wgo1 ys ww ww1 ww2 } } } } }
+                 } in
+                 $wgo1
+                   NumberPlace.solver4
+                   NumberPlace.solver3
+                   NumberPlace.solver2
+                   NumberPlace.solver1) -}
+47d5c772977417bba35f18161d719cf7
+  $winvFlag ::
+    [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> [GHC.Types.Int]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> NumberPlace.BitInt
+    -> (# [GHC.Types.Int], [GHC.Types.Int], [GHC.Types.Int] #)
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U(U)><L,U(U)><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ (ww :: [GHC.Types.Int])
+                   (ww1 :: [GHC.Types.Int])
+                   (ww2 :: [GHC.Types.Int])
+                   (w :: GHC.Types.Int)
+                   (w1 :: GHC.Types.Int)
+                   (w2 :: NumberPlace.BitInt) ->
+                 (# NumberPlace.substNth
+                      @ GHC.Types.Int
+                      ww
+                      w
+                      (case w of ww3 { GHC.Types.I# ww4 ->
+                       case GHC.List.$w!!
+                              @ GHC.Types.Int
+                              ww
+                              ww4 of wild { GHC.Types.I# x# ->
+                       case w2 of wild1 { GHC.Types.I# y# ->
+                       GHC.Types.I# (GHC.Prim.xorI# x# y#) } } }),
+                    NumberPlace.substNth
+                      @ GHC.Types.Int
+                      ww1
+                      w1
+                      (case w1 of ww3 { GHC.Types.I# ww4 ->
+                       case GHC.List.$w!!
+                              @ GHC.Types.Int
+                              ww1
+                              ww4 of wild { GHC.Types.I# x# ->
+                       case w2 of wild1 { GHC.Types.I# y# ->
+                       GHC.Types.I# (GHC.Prim.xorI# x# y#) } } }),
+                    let {
+                      x1 :: GHC.Types.Int
+                      = case w1 of ww3 { GHC.Types.I# ww4 ->
+                        case GHC.Classes.divInt# ww4 3# of ww5 { DEFAULT ->
+                        case w of ww6 { GHC.Types.I# ww7 ->
+                        case GHC.Classes.divInt# ww7 3# of ww8 { DEFAULT ->
+                        GHC.Types.I# (GHC.Prim.+# (GHC.Prim.*# ww5 3#) ww8) } } } }
+                    } in
+                    NumberPlace.substNth
+                      @ GHC.Types.Int
+                      ww2
+                      x1
+                      (case x1 of ww3 { GHC.Types.I# ww4 ->
+                       case GHC.List.$w!!
+                              @ GHC.Types.Int
+                              ww2
+                              ww4 of wild { GHC.Types.I# x# ->
+                       case w2 of wild1 { GHC.Types.I# y# ->
+                       GHC.Types.I# (GHC.Prim.xorI# x# y#) } } }) #)) -}
+4df1018eeccb92b646e411e35c7f2ce5
+  $wxs :: GHC.Prim.Int# -> (# GHC.Types.Int, [GHC.Types.Int] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+4c61bd05cfd85c0ac3d77f82bb14be1b
+  $wxs1 :: GHC.Prim.Int# -> (# GHC.Types.Int, [GHC.Types.Int] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+266f87781d9cf9dea4981a1822d4bddc
+  $wxs2 :: GHC.Prim.Int# -> (# GHC.Types.Int, [GHC.Types.Int] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+32e8ff5a447b2c6da8ead2ca472d6ce3
+  type BitInt = GHC.Types.Int
+e5391e433bbeebbd896cf79715715775
+  type Board = [[GHC.Types.Int]]
+81253d7c988b0aabe61c22bacef79b80
+  data Flag = Flag [GHC.Types.Int] [GHC.Types.Int] [GHC.Types.Int]
+140754d98993f05da9e8a4e4175eaab1
+  failedBoard :: NumberPlace.Board
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.failedBoard1
+                   (GHC.Types.[] @ [GHC.Types.Int])) -}
+44bda981a585d1e2db3241324bc10839
+  failedBoard1 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+76f67be4624142ca241a619f16eda61c
+  failedBoard2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+8b6f9078f4bb431287f1631ca5f04cd9
+  fromBitBoard :: NumberPlace.Board -> NumberPlace.Board
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (board :: NumberPlace.Board) ->
+                 GHC.Base.build
+                   @ [GHC.Types.Int]
+                   (\ @ b1
+                      (c :: [GHC.Types.Int] -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ [NumberPlace.BitInt]
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ [GHC.Types.Int]
+                         @ b1
+                         @ [NumberPlace.BitInt]
+                         c
+                         NumberPlace.solver'1)
+                      n
+                      board)) -}
+7ce3277ce52dad3a8e3249b99d492fc5
+  initFlag :: NumberPlace.Board -> NumberPlace.Flag
+  {- Arity: 1, Strictness: <L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: NumberPlace.Board) ->
+                 case NumberPlace.$winitFlag w of ww { (#,,#) ww1 ww2 ww3 ->
+                 NumberPlace.Flag ww1 ww2 ww3 }) -}
+6cfa43ebf4f85c6d3590558bcef37fa9
+  solveMyBoard :: [NumberPlace.Board]
+  {- Unfolding: (NumberPlace.solver NumberPlace.solveMyBoard1) -}
+9d16dcb14bbe837e41b81af9c3562e76
+  solveMyBoard1 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard80
+                   NumberPlace.solveMyBoard2) -}
+f99b07d22638c52cf284f8692d304320
+  solveMyBoard10 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard11) -}
+9de58787f9184a267c8a9199000acaf2
+  solveMyBoard11 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard21
+                   NumberPlace.solveMyBoard12) -}
+084db9b7848238df1120145e0fb8795d
+  solveMyBoard12 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard13) -}
+d54d5eb9bba3386c113b7f5c899a5089
+  solveMyBoard13 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard14) -}
+ef1028a45446da08168f09f2309e8afe
+  solveMyBoard14 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard20
+                   NumberPlace.solveMyBoard15) -}
+8276cb768dc1f566028f4b6ff2fcda65
+  solveMyBoard15 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard16) -}
+67aaf2ff3d1b8f1bd309152dffa0d7f1
+  solveMyBoard16 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard17) -}
+bef6ac6b07332606428140780fcf5a77
+  solveMyBoard17 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard18) -}
+ac6adae513d91a91b902197f1cb5250e
+  solveMyBoard18 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard19
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+3a1f6ce0fd5e407014fbdf39a1de8a6c
+  solveMyBoard19 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+72017fe002c7d1834d43ae8754d8b49c
+  solveMyBoard2 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard71
+                   NumberPlace.solveMyBoard3) -}
+29c4679136713465f98bcfe9bba835f4
+  solveMyBoard20 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 6#) -}
+83679f6a9e17c977653d5e0bc0f311cf
+  solveMyBoard21 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4#) -}
+efc02bb9c80987b4e74b134f829b5248
+  solveMyBoard22 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard31
+                   NumberPlace.solveMyBoard23) -}
+833a4efff1cd237e3e52319cf48e6922
+  solveMyBoard23 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard24) -}
+9f9ba32c1e8d1326e7a64a2b6ded7d11
+  solveMyBoard24 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard25) -}
+c8b8e79f03824589dc7ccbfa56596e16
+  solveMyBoard25 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard19
+                   NumberPlace.solveMyBoard26) -}
+f5760900e839b5f28453ee3f02cc20f1
+  solveMyBoard26 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard27) -}
+870a660975103147cfac9f2c5de3f3ef
+  solveMyBoard27 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard30
+                   NumberPlace.solveMyBoard28) -}
+b4d014d8d868bd359d3a4dc407308dd1
+  solveMyBoard28 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard29) -}
+4c3b141c08c9c116792fe5c6763dd001
+  solveMyBoard29 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.failedBoard1) -}
+65ff603425f674ea7f3adbb89e84da64
+  solveMyBoard3 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard64
+                   NumberPlace.solveMyBoard4) -}
+98b58476313e266c5aad9cdb067d5c10
+  solveMyBoard30 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 7#) -}
+e03b564259ed62142896042247ff5ad2
+  solveMyBoard31 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 5#) -}
+b498bc361eadbfb125ae348eb4977f79
+  solveMyBoard32 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard39
+                   NumberPlace.solveMyBoard33) -}
+c97f83464e928f6dbf873000b6fc48be
+  solveMyBoard33 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard30
+                   NumberPlace.solveMyBoard34) -}
+f699bb869ea5647371d38bf9c79aaf57
+  solveMyBoard34 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard35) -}
+57dbe6b3aa365e2cb32add614ce34607
+  solveMyBoard35 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard36) -}
+15653ad88bb498c5d6d36de007250042
+  solveMyBoard36 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard37) -}
+58eebc94aea58c8834010a95fad69481
+  solveMyBoard37 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard38) -}
+3a6f0f4217907261dac88b17f68803ae
+  solveMyBoard38 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard21
+                   NumberPlace.solveMyBoard29) -}
+0286a05e64a26d9f78c8b1996cfda8c4
+  solveMyBoard39 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 9#) -}
+282505611f3a0200418670d46bd8bcd3
+  solveMyBoard4 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard57
+                   NumberPlace.solveMyBoard5) -}
+0f6020a912facbdd3c2e4f99ee7515af
+  solveMyBoard40 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard47
+                   NumberPlace.solveMyBoard41) -}
+54fd5de2524c5e130bb78ae9a16c9607
+  solveMyBoard41 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard42) -}
+b63208a568810681676487667cbc5ebb
+  solveMyBoard42 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard43) -}
+9be5b32a4048cc05d9d3b8b7c9a8e4a8
+  solveMyBoard43 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard44) -}
+4b3350bce93a1f0c7f936530a5196b60
+  solveMyBoard44 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard45) -}
+5e7852995afa8d4d5cc9854b6c5456f3
+  solveMyBoard45 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard46) -}
+8f04f073dde57d58dc2d2957d5ee2133
+  solveMyBoard46 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard30
+                   NumberPlace.solveMyBoard29) -}
+9c33a06e143f28ad80ab71d6fc4707a1
+  solveMyBoard47 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3#) -}
+f364217937b31ed488afa9631aa6a5bd
+  solveMyBoard48 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard49) -}
+38cfdbc1e2bc4b202dafb1c313c83f45
+  solveMyBoard49 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard50) -}
+afdf7c596526714798d227da550f55f3
+  solveMyBoard5 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard48
+                   NumberPlace.solveMyBoard6) -}
+3ff1aca9286734b1846b0989c7842989
+  solveMyBoard50 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard51) -}
+5a0944ba4098abbf84383871cf892f0e
+  solveMyBoard51 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard52) -}
+ff8aaba93ce1aad520e59e51b367371a
+  solveMyBoard52 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard53) -}
+92985177e9a25fcb2355a6bcb53ed6f9
+  solveMyBoard53 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard20
+                   NumberPlace.solveMyBoard54) -}
+4cf98ea3ce84c121fc50c56f72d81fe3
+  solveMyBoard54 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard55) -}
+78b849d94c4a589194344c03840cd89e
+  solveMyBoard55 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard56) -}
+b00a635e41cbda1631f74633ac569dca
+  solveMyBoard56 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard39
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+426e0ee37f9b3b9156989d43bb642c40
+  solveMyBoard57 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard58) -}
+7642b93ac1746c58e7f73a74a02799b3
+  solveMyBoard58 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard59) -}
+4311ce60802b46755192fb38a2f481b5
+  solveMyBoard59 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard60) -}
+eac72947bc765821ac97445bba5974ac
+  solveMyBoard6 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard40
+                   NumberPlace.solveMyBoard7) -}
+14ab0432663c6016442cb858a9f04873
+  solveMyBoard60 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard63
+                   NumberPlace.solveMyBoard61) -}
+186f40cb9c218eee34d89404bbe559a6
+  solveMyBoard61 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard47
+                   NumberPlace.solveMyBoard62) -}
+3c99f7b69eb4737e359a05260e3419d7
+  solveMyBoard62 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard28) -}
+968b8fccc70d70b706d487262762b19c
+  solveMyBoard63 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 8#) -}
+882e752e75772e5064fa2fdd20bf2459
+  solveMyBoard64 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard30
+                   NumberPlace.solveMyBoard65) -}
+8197d0d11329819373e77ffedf9a980f
+  solveMyBoard65 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard66) -}
+aa48f21fcae4f07f40116e0b160d1318
+  solveMyBoard66 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard63
+                   NumberPlace.solveMyBoard67) -}
+ece41d1a7d188370c85b5477ffd1fa24
+  solveMyBoard67 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard68) -}
+65b25dc30f58d623e9bbe983835380f9
+  solveMyBoard68 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard69) -}
+37669705fcf87bc7b4a2551bd184a289
+  solveMyBoard69 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard70) -}
+89ef93aca232b52dfe38ea8b06d30750
+  solveMyBoard7 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard32
+                   NumberPlace.solveMyBoard8) -}
+e910d403652ce01ffd4ff291b52e308b
+  solveMyBoard70 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard47
+                   NumberPlace.solveMyBoard29) -}
+4aff1077ba5c8e3b641a0da35f0f5e18
+  solveMyBoard71 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard79
+                   NumberPlace.solveMyBoard72) -}
+c5b633664f066df5567df82703a7244b
+  solveMyBoard72 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard73) -}
+3037d012649418ac08292392fb70b132
+  solveMyBoard73 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard47
+                   NumberPlace.solveMyBoard74) -}
+92de9fde7bbca267ea3f540c0506181a
+  solveMyBoard74 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard39
+                   NumberPlace.solveMyBoard75) -}
+64373ffc31aa192b18c66a670fd48828
+  solveMyBoard75 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard76) -}
+8c59193a322d345f041a409816f5dc84
+  solveMyBoard76 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard77) -}
+d01e29772831032525ea2ff9c0e4dec6
+  solveMyBoard77 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard78) -}
+50638d92bb3a7901da24dd9d092e332d
+  solveMyBoard78 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard63
+                   NumberPlace.failedBoard1) -}
+6e1095428e8715cf36a3a57798921d7d
+  solveMyBoard79 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2#) -}
+b160f6e16e07244c85ed2bafba2d8c0a
+  solveMyBoard8 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard22
+                   NumberPlace.solveMyBoard9) -}
+71030b546bd7787ad352d7e4a1b82851
+  solveMyBoard80 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard81) -}
+beb096ad11d055fc80abe5bb37b6668f
+  solveMyBoard81 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard82) -}
+a82c15593f7523e095b6e4b84a96b9fa
+  solveMyBoard82 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard83) -}
+5ff09d5d6be00ff2bd716359f86aa60f
+  solveMyBoard83 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard30
+                   NumberPlace.solveMyBoard84) -}
+e80604f88d2a4bba5b2ff99ecbc55e48
+  solveMyBoard84 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard85) -}
+f57827cd72e2fd7ef1125211a0762087
+  solveMyBoard85 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.failedBoard2
+                   NumberPlace.solveMyBoard86) -}
+3cf4969c21e33c8acd8029729584d8be
+  solveMyBoard86 :: [GHC.Types.Int]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   NumberPlace.solveMyBoard20
+                   NumberPlace.solveMyBoard29) -}
+a049335dbf959df47a18bdfb3a16cdfa
+  solveMyBoard9 :: [[GHC.Types.Int]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Types.Int]
+                   NumberPlace.solveMyBoard10
+                   (GHC.Types.[] @ [GHC.Types.Int])) -}
+9eec11eef550810c07ec26b77e34c617
+  solver :: NumberPlace.Board -> [NumberPlace.Board]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ (board :: NumberPlace.Board) ->
+                 let {
+                   board' :: NumberPlace.Board
+                   = GHC.Base.map
+                       @ [GHC.Types.Int]
+                       @ [NumberPlace.BitInt]
+                       NumberPlace.solver6
+                       board
+                 } in
+                 letrec {
+                   go :: [GHC.Types.Int] -> [(GHC.Types.Int, GHC.Types.Int)]
+                     {- Arity: 1, Strictness: <S,1*U> -}
+                   = \ (ds :: [GHC.Types.Int]) ->
+                     case ds of wild {
+                       [] -> GHC.Types.[] @ (GHC.Types.Int, GHC.Types.Int)
+                       : y ys
+                       -> let {
+                            z :: [(GHC.Types.Int, GHC.Types.Int)] = go ys
+                          } in
+                          let {
+                            lvl :: [GHC.Types.Int]
+                            = case y of ww { GHC.Types.I# ww1 ->
+                              GHC.List.$w!! @ [GHC.Types.Int] board ww1 }
+                          } in
+                          letrec {
+                            go1 :: [GHC.Types.Int] -> [(GHC.Types.Int, GHC.Types.Int)]
+                              {- Arity: 1, Strictness: <S,1*U> -}
+                            = \ (ds1 :: [GHC.Types.Int]) ->
+                              case ds1 of wild1 {
+                                [] -> z
+                                : y1 ys1
+                                -> case y1 of ww { GHC.Types.I# ww1 ->
+                                   case GHC.List.$w!!
+                                          @ GHC.Types.Int
+                                          lvl
+                                          ww1 of wild2 { GHC.Types.I# x1 ->
+                                   case x1 of wild3 {
+                                     DEFAULT -> go1 ys1
+                                     0#
+                                     -> GHC.Types.:
+                                          @ (GHC.Types.Int, GHC.Types.Int)
+                                          (ww, y)
+                                          (go1 ys1) } } } }
+                          } in
+                          go1 NumberPlace.solver5 }
+                 } in
+                 NumberPlace.solver_iter
+                   board'
+                   (go NumberPlace.solver5)
+                   (NumberPlace.initFlag board')) -}
+ede6bb2f22320b9de159af6a05ee2baa
+  solver' :: NumberPlace.Board -> [NumberPlace.Board]
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (board :: NumberPlace.Board) ->
+                 let {
+                   board' :: NumberPlace.Board
+                   = GHC.Base.map
+                       @ [GHC.Types.Int]
+                       @ [NumberPlace.BitInt]
+                       NumberPlace.solver6
+                       board
+                 } in
+                 case NumberPlace.$wdecideNum
+                        board'
+                        (NumberPlace.initFlag board') of ww { (#,,#) ww1 ww2 ww3 ->
+                 case ww3 of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        go :: [GHC.Types.Int] -> [(GHC.Types.Int, GHC.Types.Int)]
+                          {- Arity: 1, Strictness: <S,1*U> -}
+                        = \ (ds :: [GHC.Types.Int]) ->
+                          case ds of wild1 {
+                            [] -> GHC.Types.[] @ (GHC.Types.Int, GHC.Types.Int)
+                            : y ys
+                            -> let {
+                                 z :: [(GHC.Types.Int, GHC.Types.Int)] = go ys
+                               } in
+                               let {
+                                 lvl :: [GHC.Types.Int]
+                                 = case y of ww4 { GHC.Types.I# ww5 ->
+                                   GHC.List.$w!! @ [GHC.Types.Int] ww1 ww5 }
+                               } in
+                               letrec {
+                                 go1 :: [GHC.Types.Int] -> [(GHC.Types.Int, GHC.Types.Int)]
+                                   {- Arity: 1, Strictness: <S,1*U> -}
+                                 = \ (ds1 :: [GHC.Types.Int]) ->
+                                   case ds1 of wild2 {
+                                     [] -> z
+                                     : y1 ys1
+                                     -> case y1 of ww4 { GHC.Types.I# ww5 ->
+                                        case GHC.List.$w!!
+                                               @ GHC.Types.Int
+                                               lvl
+                                               ww5 of wild3 { GHC.Types.I# x1 ->
+                                        case x1 of wild4 {
+                                          DEFAULT -> go1 ys1
+                                          0#
+                                          -> GHC.Types.:
+                                               @ (GHC.Types.Int, GHC.Types.Int)
+                                               (ww4, y)
+                                               (go1 ys1) } } } }
+                               } in
+                               go1 NumberPlace.solver5 }
+                      } in
+                      GHC.List.$wunsafeTake
+                        @ [[GHC.Types.Int]]
+                        5#
+                        (NumberPlace.solver'_iter ww1 (go NumberPlace.solver5) ww2)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ NumberPlace.Board
+                        (NumberPlace.fromBitBoard ww1)
+                        (GHC.Types.[] @ NumberPlace.Board) } }) -}
+562986933f83c8a9d3dd4c9109a8e2ea
+  solver'1 :: [NumberPlace.BitInt] -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [NumberPlace.BitInt]) ->
+                 GHC.Base.build
+                   @ GHC.Types.Int
+                   (\ @ b1
+                      (c :: GHC.Types.Int -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Int
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Int
+                         @ b1
+                         @ GHC.Types.Int
+                         c
+                         NumberPlace.solver'2)
+                      n
+                      xs)) -}
+9b7fb33540d7ed46e6a472229e4c3df9
+  solver'2 :: NumberPlace.BitInt -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x1 :: NumberPlace.BitInt) ->
+                 case x1 of wild { GHC.Types.I# ds ->
+                 case ds of ds1 {
+                   DEFAULT
+                   -> GHC.Types.I#
+                        (GHC.Prim.word2Int#
+                           (GHC.Prim.popCnt# (GHC.Prim.int2Word# (GHC.Prim.-# ds1 1#))))
+                   0# -> GHC.Types.I# 0# } }) -}
+10aefb03932ce29fbfa969b006df538d
+  solver'_iter ::
+    NumberPlace.Board
+    -> [(GHC.Types.Int, GHC.Types.Int)]
+    -> NumberPlace.Flag
+    -> [NumberPlace.Board]
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,U(U,U,U)> -}
+6b164808381d808ac009a97f2de0db50
+  solver1 :: [GHC.Types.Int]
+  {- Unfolding: (case NumberPlace.$wxs 9# of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Int ww1 ww2 }) -}
+2829b55691327d669b04a38cbe3c6ecb
+  solver2 :: [GHC.Types.Int]
+  {- Unfolding: (case NumberPlace.$wxs1 9# of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Int ww1 ww2 }) -}
+62d05816dc4bc8b20d0d3c1aa7e5b299
+  solver3 :: [GHC.Types.Int]
+  {- Unfolding: (case NumberPlace.$wxs2 9# of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Types.Int ww1 ww2 }) -}
+8c9fb3e05a4895ab43729462843b0078
+  solver4 :: [(GHC.Types.Int, GHC.Types.Int)]
+  {- Unfolding: (NumberPlace.solver_go 0#) -}
+7315509e12f36bb6ac4b020ae2094379
+  solver5 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 0# 8#) -}
+24825cab9b04db8b91105c282918c0cb
+  solver6 :: [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (xs :: [GHC.Types.Int]) ->
+                 GHC.Base.build
+                   @ GHC.Types.Int
+                   (\ @ b1
+                      (c :: GHC.Types.Int -> b1 -> b1)[OneShot]
+                      (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Int
+                      @ b1
+                      (GHC.Base.mapFB
+                         @ GHC.Types.Int
+                         @ b1
+                         @ GHC.Types.Int
+                         c
+                         NumberPlace.solver7)
+                      n
+                      xs)) -}
+6087e797430ade11c13fc276a690bf52
+  solver7 :: GHC.Types.Int -> NumberPlace.BitInt
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case ww1 of ds {
+                   DEFAULT
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ds 64#) of wild2 {
+                        GHC.Types.False -> GHC.Types.I# (GHC.Prim.uncheckedIShiftL# 1# ds)
+                        GHC.Types.True -> GHC.Types.I# 0# }
+                   0# -> GHC.Types.I# 0# } }) -}
+8f23dcefbbef04e3cb5e5e2660042c0a
+  solver_go :: GHC.Prim.Int# -> [(GHC.Types.Int, GHC.Types.Int)]
+  {- Arity: 1, Strictness: <L,U> -}
+97c868cedc5bb79e370dc524b8751cea
+  solver_iter ::
+    NumberPlace.Board
+    -> [(GHC.Types.Int, GHC.Types.Int)]
+    -> NumberPlace.Flag
+    -> [NumberPlace.Board]
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,U(U,U,U)> -}
+93a99c3a43773d99b735f42700fe6fb7
+  substNth :: [a] -> GHC.Types.Int -> a -> [a]
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U(1*U)><L,U> -}
+instance [safe] GHC.Show.Show [NumberPlace.Flag]
+  = NumberPlace.$fShowFlag
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,16 @@
+[1 of 1] Compiling Main             ( /private/var/folders/sb/7x_6hl1j5s1bj8k24sf4lg440000gn/T/stack8907/mysql-0.1.4/Setup.hs, /private/var/folders/sb/7x_6hl1j5s1bj8k24sf4lg440000gn/T/stack8907/mysql-0.1.4/.stack-work/dist/x86_64-osx/Cabal-1.24.0.0/setup/Main.o )
+Linking /private/var/folders/sb/7x_6hl1j5s1bj8k24sf4lg440000gn/T/stack8907/mysql-0.1.4/.stack-work/dist/x86_64-osx/Cabal-1.24.0.0/setup/setup ...
+Configuring mysql-0.1.4...
+Building mysql-0.1.4...
+Preprocessing library mysql-0.1.4...
+[1 of 3] Compiling Database.MySQL.Base.Types ( .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Database/MySQL/Base/Types.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Database/MySQL/Base/Types.o )
+
+Database/MySQL/Base/Types.hsc:228:10: warning: [-Wmissing-methods]
+    • No explicit implementation for
+        either ‘poke’ or ‘pokeElemOff’ or ‘pokeByteOff’
+    • In the instance declaration for ‘Storable Field’
+[2 of 3] Compiling Database.MySQL.Base.C ( .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Database/MySQL/Base/C.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Database/MySQL/Base/C.o )
+[3 of 3] Compiling Database.MySQL.Base ( Database/MySQL/Base.hs, .stack-work/dist/x86_64-osx/Cabal-1.24.0.0/build/Database/MySQL/Base.o )
+Installing library in
+/Users/hiromu/SourceCode/Haskell/stacks/puzzle-server/.stack-work/install/x86_64-osx/lts-7.0/8.0.1/lib/x86_64-osx-ghc-8.0.1/mysql-0.1.4-DimPIfooGGHJabUPWkGGxx
+Registering mysql-0.1.4...
